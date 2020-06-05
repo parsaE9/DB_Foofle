@@ -18,12 +18,11 @@
     <?php
     if (isset($_SESSION['username'])) {
         $username = $_SESSION['username'];
-        $query = "SELECT * FROM personal_info WHERE username = '{$username}'";
-        $query2 = "SELECT * FROM system_info WHERE username = '{$username}'";
-        $select_user_profile_query = mysqli_query($connection, $query);
-        $select_user_profile_query2 = mysqli_query($connection, $query2);
+        $sql = "CALL profile_view('{$username}')";
+        $q = $pdo->query($sql);
+        $q -> setFetchMode(PDO::FETCH_ASSOC);
 
-        while ($row = mysqli_fetch_array($select_user_profile_query)) {
+        while ($row = $q -> fetch()) {
             $first_name = $row["first_name"];
             $last_name = $row["last_name"];
             $canonical_name = $row["canonical_name"];
@@ -32,10 +31,7 @@
             $NID = $row["NID"];
             $access = $row["access"];
             $birth_date = $row["birth_date"];
-        }
-        while ($row = mysqli_fetch_array($select_user_profile_query2)) {
-            $password = $row["password"];
-            $security_phone_number = $row["phone_number"];
+            $security_phone_number = $row["security_phone_number"];
         }
     }
     echo "<tr>";

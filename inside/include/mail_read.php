@@ -17,11 +17,11 @@
 
     <?php
     $username = $_SESSION['username'];
-    $query = "SELECT * FROM mail WHERE (receiver1 = '{$username}' OR receiver2 = '{$username}' OR receiver3 = '{$username}'
-              OR CCreceiver1 = '{$username}' OR CCreceiver2 = '{$username}' OR CCreceiver3 = '{$username}')";
-    $select_mail = mysqli_query($connection, $query);
+    $sql = "CALL mail_inbox('{$username}')";
+    $q = $pdo->query($sql);
+    $q -> setFetchMode(PDO::FETCH_ASSOC);
 
-    while ($row = mysqli_fetch_assoc($select_mail)) {
+    while ($row = $q -> fetch()) {
         $sender= $row["sender"];
         $title = $row["title"];
         $date = $row["date"];

@@ -1,12 +1,14 @@
 <?php session_start(); ?>
+<?php include "db.php"; ?>
 
 <?php
 
 if (isset($_GET['source'])) {
-    $source = $_GET['source'];
-}
-if ($source == "delete_account") {
-
+    $username = $_SESSION['username'];
+    $_SESSION['username'] = null;
+    $sql = "CALL profile_delete('{$username}')";
+    $q = $pdo->query($sql);
+    header("location: ../home_page.php");
 }
 
 $_SESSION['username'] = null;

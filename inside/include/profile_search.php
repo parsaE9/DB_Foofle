@@ -47,10 +47,11 @@
         $birth_date = "";
         $access = "";
 
-        $query = "SELECT * FROM personal_info WHERE username = '{$username}'";
-        $select_user_profile_query = mysqli_query($connection, $query);
+        $sql = "CALL profile_view('{$username}')";
+        $q = $pdo->query($sql);
+        $q -> setFetchMode(PDO::FETCH_ASSOC);
 
-        while ($row = mysqli_fetch_array($select_user_profile_query)) {
+        while ($row = $q -> fetch()) {
             $username = $row["username"];
             $first_name = $row["first_name"];
             $last_name = $row["last_name"];
@@ -73,8 +74,7 @@
             $username = "";
         }
     }
-
-
+    
     echo "<tr>";
     ?>
     <?php

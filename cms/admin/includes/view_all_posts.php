@@ -121,17 +121,14 @@ if (isset($_POST['checkBoxArray'])) {
             echo "<td><a href='posts.php?reset={$post_id}'>$post_view_count</a></td>";
             echo "<td><a href='../post.php?p_id={$post_id}'>View Post</a></td>";
             echo "<td><a href='posts.php?source=edit_post&p_id={$post_id}'>Edit</a></td>";
-            echo "<td><a onclick=\"javascript : return confirm('Are you sure you want to delete this post'); \" href='posts.php?delete={$post_id}'>Delete</a></td>";
+            echo "<td><a href='posts.php?delete={$post_id}'>Delete</a></td>";
             echo "</tr>";
-
         }
         ?>
         </tbody>
     </table>
 </form>
-
 <?php
-
 if (isset($_GET['delete'])) {
     $the_post_id = $_GET['delete'];
     $delete_comment_query = "DELETE FROM comments WHERE comment_post_id = {$the_post_id}";

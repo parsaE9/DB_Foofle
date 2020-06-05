@@ -1,62 +1,31 @@
 <?php
 $connection = mysqli_connect("localhost", "root", "", "foofle");
-if(!$connection)
-    echo "wer are not connected!";
+$host = 'localhost';
+$dbname = 'foofle';
+$username = 'root';
+$password = '';
+$pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+//
 
-$query = " CREATE TABLE IF NOT EXISTS foofle.system_info ( 
-          username VARCHAR(255) NOT NULL ,
-          password VARCHAR(255) NOT NULL  ,
-          phone_number VARCHAR(255) NOT NULL ,
-          register_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
-          PRIMARY KEY (username)
-) ENGINE = InnoDB ";
+//$test = mysqli_query($connection,"CREATE PROCEDURE p(IN id_val VARCHAR(255))
+    // BEGIN INSERT INTO system_info(username) VALUES(id_val); END;");
+//mysqli_query($connection,"CREATE PROCEDURE mail_inbox(IN username_p VARCHAR(255)) BEGIN SELECT * FROM mail WHERE (receiver1 = username_p OR receiver2 = username_p OR receiver3 = username_p
+             // OR CCreceiver1 = username_p OR CCreceiver2 = username_p OR CCreceiver3 = username_p); END;");
 
-$query2 = " CREATE TABLE IF NOT EXISTS foofle.personal_info ( 
-            username VARCHAR(255) NOT NULL,
-            first_name VARCHAR(255) NOT NULL,
-            last_name VARCHAR(255) NOT NULL,
-            phone_number VARCHAR(255) NOT NULL,
-            address     VARCHAR(255) NOT NULL,
-            canonical_name  VARCHAR(255) NOT NULL,
-            NID         VARCHAR(255) NOT NULL,
-            access ENUM('public','private') NOT NULL DEFAULT 'public',
-            birth_date DATE NOT NULL,
-            PRIMARY KEY (username)
- ) ENGINE = InnoDB ";
+//$query = "CREATE PROCEDURE profile_delete(IN username_p VARCHAR(255)) BEGIN DELETE FROM system_info WHERE username = username_p; END;";
+//mysqli_query($connection, $query);
 
-$query3 = "CREATE TABLE IF NOT EXISTS foofle.login_time ( 
-            time_ DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , 
-            username VARCHAR(255) NOT NULL , 
-            PRIMARY KEY (time_)
-            ) ENGINE = InnoDB";
-
-$query4 = "CREATE TABLE IF NOT EXISTS foofle.mail ( 
-          mail_ID INT(3) NOT NULL AUTO_INCREMENT ,
-          sender VARCHAR(255) NOT NULL , title VARCHAR(255) NOT NULL , 
-          date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , content TEXT NOT NULL ,
-          receiver1 VARCHAR(255) NOT NULL, receiver2 VARCHAR(255) NOT NULL,
-          receiver3 VARCHAR(255) NOT NULL, CCreceiver1 VARCHAR(255) NOT NULL,
-          CCreceiver2 VARCHAR(255) NOT NULL, CCreceiver3 VARCHAR(255) NOT NULL,
-          PRIMARY KEY (mail_ID)) ENGINE = InnoDB";
-
-$query5 = "ALTER TABLE mail ADD CONSTRAINT 
-           mail_system_foreign_key_constraint FOREIGN KEY (sender) 
-           REFERENCES system_info(username) ON DELETE CASCADE ON UPDATE CASCADE";
-
-$query6 = "ALTER TABLE personal_info ADD CONSTRAINT 
-           system_personal_foreign_key_constraint FOREIGN KEY (username) 
-           REFERENCES system_info(username) ON DELETE CASCADE ON UPDATE CASCADE";
-
-$query7 = "CREATE TABLE foofle.news ( 
-            news_ID INT(3) NOT NULL AUTO_INCREMENT , username VARCHAR(255) NOT NULL , 
-            date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , content TEXT NOT NULL , 
-            PRIMARY KEY (news_ID)) ENGINE = InnoDB";
-
-$query8 = "ALTER TABLE news ADD CONSTRAINT 
-           news_system_foreign_key_constraint FOREIGN  KEY (username)
-           REFERENCES system_info(username) ON DELETE CASCADE ON UPDATE CASCADE ";
-
-
-//$insert_query = mysqli_query($connection, $query7);
-
-//$query2 = "INSERT INTO user_test (username) VALUES ('abc')";
+$query5 = "CREATE PROCEDURE profile_edit(IN username_p VARCHAR(255), IN password_p VARCHAR(255), IN security_phone_number_p VARCHAR(255),
+           IN first VARCHAR(255), IN last VARCHAR(255), IN canonical VARCHAR(255), IN phone VARCHAR(255), IN address_p VARCHAR(255),
+           IN NID_p VARCHAR(255), IN access_p VARCHAR(255), IN birth DATE)
+           BEGIN 
+           UPDATE system_info SET security_phone_number = security_phone_number_p, password = password_p WHERE username = username_p;
+           UPDATE personal_info SET first_name = first, last_name = last,
+           canonical_name = canonical, address = address_p, phone_number = phone,
+           NID = NID_p, access = access_p, birth_date = birth WHERE username= username_p;
+           END;";
+//mysqli_query($connection, $query);
+//mysqli_query($connection, 'CALL p(@msg)');
+//$res = mysqli_query($connection, "SELECT @msg as _p_out");
+//$row = mysqli_fetch_assoc($res);
+//$a = $row['_p_out'];

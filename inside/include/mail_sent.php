@@ -17,10 +17,11 @@
 
     <?php
     $username = $_SESSION['username'];
-    $query = "SELECT * FROM mail WHERE sender = '{$username}' ";
-    $select_mail = mysqli_query($connection, $query);
+    $sql = "CALL mail_sent('{$username}')";
+    $q = $pdo->query($sql);
+    $q -> setFetchMode(PDO::FETCH_ASSOC);
 
-    while ($row = mysqli_fetch_assoc($select_mail)) {
+    while ($row = $q -> fetch()) {
         $sender= $row["sender"];
         $title = $row["title"];
         $date = $row["date"];

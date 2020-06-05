@@ -3,9 +3,11 @@
 
 <?php
 if (isset($_POST['submit'])) {
+    $message = "";
+
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $backup_phone= $_POST['backup_phone'];
+    $backup_phone = $_POST['backup_phone'];
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $phone_number = $_POST['phone_number'];
@@ -15,35 +17,23 @@ if (isset($_POST['submit'])) {
     $access = $_POST['access'];
     $birth_date = $_POST['birth_date'];
 
-    if (!empty($password) && !empty($username)) {
+    $username = mysqli_real_escape_string($connection, $username);
+    $password = mysqli_real_escape_string($connection, $password);
+    $backup_phone = mysqli_real_escape_string($connection, $backup_phone);
+    $first_name = mysqli_real_escape_string($connection, $first_name);
+    $last_name = mysqli_real_escape_string($connection, $last_name);
+    $phone_number = mysqli_real_escape_string($connection, $phone_number);
+    $address = mysqli_real_escape_string($connection, $address);
+    $canonical_name = mysqli_real_escape_string($connection, $canonical_name);
+    $NID = mysqli_real_escape_string($connection, $NID);
+    $access = mysqli_real_escape_string($connection, $access);
+    $birth_date = mysqli_real_escape_string($connection, $birth_date);
 
-        $username = mysqli_real_escape_string($connection, $username);
-        $password = mysqli_real_escape_string($connection, $password);
-        $backup_phone = mysqli_real_escape_string($connection, $backup_phone);
-        $first_name = mysqli_real_escape_string($connection, $first_name);
-        $last_name = mysqli_real_escape_string($connection, $last_name);
-        $phone_number = mysqli_real_escape_string($connection, $phone_number);
-        $address = mysqli_real_escape_string($connection, $address);
-        $canonical_name = mysqli_real_escape_string($connection, $canonical_name);
-        $NID = mysqli_real_escape_string($connection, $NID);
-        $access = mysqli_real_escape_string($connection, $access);
-        $birth_date = mysqli_real_escape_string($connection, $birth_date);
+    $query = "CALL register('{$username}','{$password}','{$backup_phone}', '{$first_name}','{$last_name}','{$canonical_name}',
+        '{$phone_number}','{$address}','{$NID}','{$access}','{$birth_date}')";
 
-        $password = password_hash($password, PASSWORD_BCRYPT, array('cost' => 12));
-
-        $query = "INSERT INTO system_info (username, password, phone_number, register_date)
-                  VALUES ('{$username}','{$password}','{$backup_phone}', CURRENT_TIMESTAMP )";
-
-        $query2 = "INSERT INTO personal_info (username, first_name, last_name, phone_number,
-                  address, canonical_name, NID,access, birth_date) VALUES 
-                  ('{$username}','{$first_name}','{$last_name}','{$phone_number}','{$address}', 
-                  '{$canonical_name}', '{$NID}','{$access}', '{$birth_date}')";
-        mysqli_query($connection, $query);
-        mysqli_query($connection, $query2);
-        $message = "Your Registration Have Been Submited";
-    } else {
-        $message = "Fields Cannot Be Empty";
-    }
+    mysqli_query($connection, $query);
+    $message = "Your Registration Have Been Submitted";
 
 } else {
     $message = "";
@@ -115,8 +105,8 @@ if (isset($_POST['submit'])) {
                                 <label for="author">Access</label>
                                 <select name="access" id="">
                                     <?php
-                                        echo "<option value='public'>Public</option>";
-                                        echo "<option value='private'>Private</option>";
+                                    echo "<option value='public'>Public</option>";
+                                    echo "<option value='private'>Private</option>";
                                     ?>
                                 </select>
                             </div>

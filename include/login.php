@@ -9,22 +9,17 @@ if(isset($_POST['login'])){
     $username = mysqli_real_escape_string($connection, $username);
     $password = mysqli_real_escape_string($connection, $password);
 
-    $query = "SELECT * FROM system_info WHERE username = '{$username}'";
-    $select_user_query = mysqli_query($connection, $query);
+    mysqli_query($connection, "CALL login('{$username}','{$password}',@yes_no)");
+    $res = mysqli_query($connection, "SELECT @yes_no as _p_out");
+    $row = mysqli_fetch_assoc($res);
+    $a = $row['_p_out'];
 
-    while($row = mysqli_fetch_array($select_user_query)){
-        $db_username = $row['username'];
-        $db_password = $row['password'];
-    }
-
-    if($username == $db_username && password_verify($password , $db_password)){
-        $query = "INSERT INTO login_time (time_, username) VALUES (CURRENT_TIMESTAMP, '{$username}')";
-        mysqli_query($connection, $query);
-        $_SESSION['username'] = $db_username;
+    if($a == 1){
+        mysqli_query($connection, "CALL insert_into_login_time('{$username}')");
+        $_SESSION['username'] = $username;
         header("location: ../inside/index.php");
     }else{
         header("location: ../home_page.php");
     }
-
 }
 ?>

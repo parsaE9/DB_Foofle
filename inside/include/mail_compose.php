@@ -12,16 +12,13 @@ if (isset($_POST['send'])) {
     $CC3= $_POST['CC3'];
     $content = $_POST['content'];
 
-    $query = "INSERT INTO mail(sender, title, date, content, receiver1,
-              receiver2, receiver3, CCreceiver1, CCreceiver2, CCreceiver3) 
-              VALUES ('{$username}', '{$title}', CURRENT_TIMESTAMP, '{$content}', 
+    $query = "CALL mail_compose('{$username}', '{$title}', '{$content}', 
               '{$receiver1}', '{$receiver2}','{$receiver3}', '{$CC1}', '{$CC2}', '{$CC3}')";
 
     $send_mail_query = mysqli_query($connection, $query);
 
     header("Location: index.php");
 }
-
 ?>
 
 <form action="" method="post" enctype="multipart/form-data">

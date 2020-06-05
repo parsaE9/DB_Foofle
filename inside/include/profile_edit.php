@@ -1,12 +1,11 @@
 <?php
 if(isset($_SESSION['username'])){
     $username = $_SESSION['username'];
-    $query = "SELECT * FROM personal_info WHERE username = '{$username}'";
-    $query2 = "SELECT * FROM system_info WHERE username = '{$username}'";
-    $select_user_profile_query = mysqli_query($connection, $query);
-    $select_user_profile_query2 = mysqli_query($connection, $query2);
+    $sql = "CALL profile_view('{$username}')";
+    $q = $pdo->query($sql);
+    $q -> setFetchMode(PDO::FETCH_ASSOC);
 
-    while($row = mysqli_fetch_array($select_user_profile_query)){
+    while($row = $q -> fetch()){
         $first_name = $row["first_name"];
         $last_name = $row["last_name"];
         $canonical_name= $row["canonical_name"];
@@ -15,12 +14,9 @@ if(isset($_SESSION['username'])){
         $NID = $row["NID"];
         $access = $row["access"];
         $birth_date = $row["birth_date"];
-    }
-    while($row = mysqli_fetch_array($select_user_profile_query2)){
         $password = $row["password"];
-        $security_phone_number = $row["phone_number"];
+        $security_phone_number = $row["security_phone_number"];
     }
-
 }
 
 if (isset($_POST['edit_user'])) {
@@ -35,21 +31,14 @@ if (isset($_POST['edit_user'])) {
     $access = $_POST['access'];
     $birth_date = $_POST['birth_date'];
     $password = $_POST['password'];
-    //$post_date = date('d-m-y');
 
-    $query = "UPDATE personal_info SET first_name ='{$first_name}', last_name ='{$last_name}',
-          canonical_name ='{$canonical_name}', address ='{$address}', phone_number ='{$phone_number}',
-          NID ='{$NID}', access = '{$access}', birth_date = '{$birth_date}' WHERE username='{$username}'";
-
-    $query2 = "UPDATE system_info SET phone_number = '{$security_phone_number}', 
-          password = '{$password}' WHERE username = '{$username}'";
-
+    $query = "CALL profile_edit('{$username}', '{$password}', '{$security_phone_number}',
+           '{$first_name}', '{$last_name}', '{$canonical_name}', '{$phone_number}', '{$address}',
+           '{$NID}', '{$access}', '{$birth_date}')";
     $update_user = mysqli_query($connection, $query);
-    $update_user2 = mysqli_query($connection, $query2);
 
     header("Location: index.php");
 }
-
 ?>
 
         <div class="container-fluid" style="margin-left: -15px">

@@ -20,39 +20,33 @@
 
                         <?php
                         $username = $_SESSION['username'];
-                        $query = "SELECT * FROM news WHERE username = '{$username}' ";
-                        $select_news = mysqli_query($connection, $query);
+                        $sql = "CALL news_view('{$username}')";
+                        $q = $pdo -> query($sql);
+                        $q -> setFetchMode(PDO::FETCH_ASSOC);
 
-                        while ($row = mysqli_fetch_assoc($select_news)) {
+                        while ($row = $q -> fetch()) {
+                            $news_ID = $row["news_ID"];
                             $date = $row["date"];
                             $content = $row["content"];
-
                             echo "<tr>";
                             echo "<td>$date</td>";
                             echo "<td>$content</td>";
-                            echo "<td style='width: 100px'><a href='users.php?delete={$username}'>Delete</a></td>";
+                            echo "<td style='width: 100px'><a href='news.php?delete={$news_ID}'>Delete</a></td>";
                             echo "</tr>";
 
                         }
                         ?>
                         </tbody>
                     </table>
-
-                    <?php
-                    if (isset($_GET['delete'])) {
-                        if (isset($_SESSION['user_role'])) {
-                            if ($_SESSION['user_role'] == 'admin') {
-                                $the_user_id = mysqli_real_escape_string($connection, $_GET['delete']);
-                                $query = "DELETE FROM users WHERE user_id={$the_user_id}";
-                                $delete_user_query = mysqli_query($connection, $query);
-                                header("Location: users.php");
-                            }
-                        }
-                    }
-                    ?>
-
                 </div>
             </div>
         </div>
     </div>
+<?php
+if (isset($_GET['delete'])) {
+    $the_news_ID = $_GET['delete'];
+    mysqli_query($connection, "CALL news_delete('{$the_news_ID}')");
+    header("Location: news.php");
+}
+?>
 <?php include "include/inside_footer.php"; ?>
