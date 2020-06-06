@@ -22,6 +22,9 @@
                         case 'search_others':
                             include "include/profile_search.php";
                             break;
+                        case 'allowed_unallowed':
+                            include "include/profile_allowed_unallowed.php";
+                            break;
                         default:
                             include "include/profile_edit.php";
                             break;

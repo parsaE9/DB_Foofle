@@ -29,6 +29,9 @@
                         <a href="profile.php">Edit Profile</a>
                     </li>
                     <li>
+                        <a href="profile.php?source=allowed_unallowed">Allowed & Unallowed Users</a>
+                    </li>
+                    <li>
                         <a href="profile.php?source=search_others">Search Others</a>
                     </li>
                     <li>

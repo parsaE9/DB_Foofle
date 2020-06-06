@@ -3,7 +3,6 @@
 
 <?php
 if (isset($_POST['submit'])) {
-    $message = "";
 
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -30,13 +29,19 @@ if (isset($_POST['submit'])) {
     $birth_date = mysqli_real_escape_string($connection, $birth_date);
 
     $query = "CALL register('{$username}','{$password}','{$backup_phone}', '{$first_name}','{$last_name}','{$canonical_name}',
-        '{$phone_number}','{$address}','{$NID}','{$access}','{$birth_date}')";
-
+        '{$phone_number}','{$address}','{$NID}','{$access}','{$birth_date}', @result)";
     mysqli_query($connection, $query);
-    $message = "Your Registration Have Been Submitted";
+    $res = mysqli_query($connection, "SELECT @result as _p_out");
+    $row = mysqli_fetch_assoc($res);
+    $a = $row['_p_out'];
 
-} else {
-    $message = "";
+    if($a == 2){
+        echo '<script>alert("Registration Successful!")</script>';
+        //header("Location: home_page.php");
+    }else{
+        echo '<script>alert("Registration Failed : \\n- Fill All Fields\\n- Username And Password Length Must Be At Least 6 Character\\n- Your Desired Username Already Exists")</script>';
+    }
+
 }
 ?>
 
@@ -50,7 +55,6 @@ if (isset($_POST['submit'])) {
                     <div class="form-wrap">
                         <h1>Register</h1>
                         <form role="form" action="registration.php" method="post" id="login-form" autocomplete="off">
-                            <h6 class="text-center"><?php echo $message ?></h6>
                             <div class="form-group">
                                 <label for="username" class="sr-only">username</label>
                                 <input type="text" name="username" id="username" class="form-control"

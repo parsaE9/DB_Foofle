@@ -16,7 +16,12 @@ if(isset($_POST['login'])){
 
     if($a == 1){
         mysqli_query($connection, "CALL insert_into_login_time('{$username}')");
-        $_SESSION['username'] = $username;
+        $sql = "CALL get_username('{$username}')";
+        $q = $pdo->query($sql);
+        $q -> setFetchMode(PDO::FETCH_ASSOC);
+        while ($row = $q -> fetch()){
+            $_SESSION['username'] = $row['username'];
+        }
         header("location: ../inside/index.php");
     }else{
         header("location: ../home_page.php");

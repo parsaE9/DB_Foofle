@@ -14,7 +14,7 @@ if(isset($_SESSION['username'])){
         $NID = $row["NID"];
         $access = $row["access"];
         $birth_date = $row["birth_date"];
-        $password = $row["password"];
+        $password = "";
         $security_phone_number = $row["security_phone_number"];
     }
 }
@@ -34,10 +34,17 @@ if (isset($_POST['edit_user'])) {
 
     $query = "CALL profile_edit('{$username}', '{$password}', '{$security_phone_number}',
            '{$first_name}', '{$last_name}', '{$canonical_name}', '{$phone_number}', '{$address}',
-           '{$NID}', '{$access}', '{$birth_date}')";
+           '{$NID}', '{$access}', '{$birth_date}', @result)";
     $update_user = mysqli_query($connection, $query);
-
-    header("Location: index.php");
+    $res = mysqli_query($connection, "SELECT @result as _p_out");
+    $row = mysqli_fetch_assoc($res);
+    $a = $row['_p_out'];
+    if($a == 2){
+        echo '<script>alert("Operation Completed Successfully!")</script>';
+    }else{
+        echo '<script>alert("Operation Failed : \\n- Fill All Fields\\n- Password Length Must Be At Least 6 Character")</script>';
+    }
+    $password = "";
 }
 ?>
 
@@ -92,6 +99,7 @@ if (isset($_POST['edit_user'])) {
                             <input type="date" value="<?php echo $birth_date; ?>" class="form-control" name="birth_date">
                         </div>
                         <h3 class="page-header">System Information</h3>
+                        <h4 class="page-header">If You Want To Edit Your Profile, You Must Fill Password</h4>
 
                         <div class="form-group">
                             <label for="post_content">Security Phone Number</label>
@@ -99,10 +107,10 @@ if (isset($_POST['edit_user'])) {
                         </div>
                         <div class="form-group">
                             <label for="author">Password</label>
-                            <input type="password" value="<?php echo $password ; ?>" class="form-control" name="password">
+                            <input type="password" value="<?php echo $password ; ?>" placeholder="YOU MUST FILL PASSWORD" class="form-control" name="password">
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" name="edit_user" value="Update Profile">
+                            <input type="submit" class="btn btn-primary"  name="edit_user" value="Update Profile">
                         </div>
 
                     </form>
