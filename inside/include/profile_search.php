@@ -47,11 +47,11 @@
         $birth_date = "";
         $access = "";
 
-        $sql = "CALL profile_view('{$username}')";
-        $q = $pdo->query($sql);
+        $sql = "CALL profile_search('{$username}')";
+        $q = $pdo -> query($sql);
         $q -> setFetchMode(PDO::FETCH_ASSOC);
 
-        while ($row = $q -> fetch()) {
+        while ($row = $q->fetch()) {
             $username = $row["username"];
             $first_name = $row["first_name"];
             $last_name = $row["last_name"];
@@ -62,19 +62,8 @@
             $birth_date = $row["birth_date"];
             $access = $row["access"];
         }
-        if ($access == "private"){
-            $first_name = "*";
-            $last_name = "*";
-            $canonical_name = "*";
-            $phone_number = "*";
-            $address = "*";
-            $NID = "*";
-            $birth_date = "*";
-        }else if ($access == null){
-            $username = "";
-        }
     }
-    
+
     echo "<tr>";
     ?>
     <?php

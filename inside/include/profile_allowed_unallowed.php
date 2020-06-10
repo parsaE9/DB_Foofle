@@ -6,7 +6,7 @@ if(isset($_SESSION['username'])){
 if (isset($_POST['allowed_btn'])) {
 
     $allowed_user = $_POST['allowed'];
-    $query = "CALL profile_add_allowed_user('{$username}','{$allowed_user}', @result)";
+    $query = "CALL profile_add_allowed_user('{$allowed_user}', @result)";
     mysqli_query($connection, $query);
     $res = mysqli_query($connection, "SELECT @result as _p_out");
     $row = mysqli_fetch_assoc($res);
@@ -20,7 +20,7 @@ if (isset($_POST['allowed_btn'])) {
 if (isset($_POST['unallowed_btn'])) {
 
     $unallowed_user = $_POST['unallowed'];
-    $query = "CALL profile_add_unallowed_user('{$username}','{$unallowed_user}', @result)";
+    $query = "CALL profile_add_unallowed_user('{$unallowed_user}', @result)";
     mysqli_query($connection, $query);
     $res = mysqli_query($connection, "SELECT @result as _p_out");
     $row = mysqli_fetch_assoc($res);

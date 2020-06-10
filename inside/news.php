@@ -20,7 +20,7 @@
 
                         <?php
                         $username = $_SESSION['username'];
-                        $sql = "CALL news_view('{$username}')";
+                        $sql = "CALL news_view()";
                         $q = $pdo -> query($sql);
                         $q -> setFetchMode(PDO::FETCH_ASSOC);
 

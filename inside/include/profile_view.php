@@ -18,7 +18,7 @@
     <?php
     if (isset($_SESSION['username'])) {
         $username = $_SESSION['username'];
-        $sql = "CALL profile_view('{$username}')";
+        $sql = "CALL profile_view()";
         $q = $pdo->query($sql);
         $q -> setFetchMode(PDO::FETCH_ASSOC);
 

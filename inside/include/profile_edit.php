@@ -1,7 +1,7 @@
 <?php
 if(isset($_SESSION['username'])){
     $username = $_SESSION['username'];
-    $sql = "CALL profile_view('{$username}')";
+    $sql = "CALL profile_view()";
     $q = $pdo->query($sql);
     $q -> setFetchMode(PDO::FETCH_ASSOC);
 
@@ -32,7 +32,7 @@ if (isset($_POST['edit_user'])) {
     $birth_date = $_POST['birth_date'];
     $password = $_POST['password'];
 
-    $query = "CALL profile_edit('{$username}', '{$password}', '{$security_phone_number}',
+    $query = "CALL profile_edit('{$password}', '{$security_phone_number}',
            '{$first_name}', '{$last_name}', '{$canonical_name}', '{$phone_number}', '{$address}',
            '{$NID}', '{$access}', '{$birth_date}', @result)";
     $update_user = mysqli_query($connection, $query);
