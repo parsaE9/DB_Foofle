@@ -10,14 +10,21 @@
                     </h1>
 
                     <?php
-                    if(isset($_GET['source'])){
+
+                    if (isset($_GET['read'])) {
+                        $mail_ID2 = $_GET['read'];
+                        mysqli_query($connection, "CALL mail_read('{$mail_ID2}')");
+                        header("Location: index.php");
+                    }
+
+                    if (isset($_GET['source'])) {
                         $source = $_GET['source'];
-                    }else{
+                    } else {
                         $source = "";
                     }
-                    switch ($source){
+                    switch ($source) {
                         case 'read_mail':
-                            include "include/mail_read.php";
+                            include "include/mail_inbox.php";
                             break;
                         case 'sent_mail':
                             include "include/mail_sent.php";
@@ -26,6 +33,18 @@
                             include "include/mail_compose.php";
                             break;
                     }
+
+                    if (isset($_GET['delete'])) {
+                        $mail_ID = $_GET['delete'];
+                        mysqli_query($connection, "CALL mail_delete('{$mail_ID}')");
+                        header("Location: index.php");
+                    }
+                    if (isset($_GET['delete2'])) {
+                        $mail_ID2 = $_GET['delete2'];
+                        mysqli_query($connection, "CALL mail_delete('{$mail_ID2}')");
+                        header("Location: index.php");
+                    }
+
                     ?>
 
                 </div>

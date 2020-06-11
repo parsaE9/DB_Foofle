@@ -42,6 +42,8 @@ if (isset($_POST['submit'])) {
         echo '<script>alert("Registration Failed : \\n- Fill All Fields\\n- Username And Password Length Must Be At Least 6 Character\\n- Your Desired Username Already Exists")</script>';
     }
 
+    $username = "";
+    $password = "";
 }
 ?>
 

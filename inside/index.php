@@ -23,30 +23,27 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <?php
-                                    $query = "SELECT * FROM posts";
-                                    $select_all_posts_query = mysqli_query($connection, $query);
-                                    //$post_counts = mysqli_num_rows($select_all_posts_query);
-                                    //echo "<div class='huge'>{$post_counts}  </div>"
-                                    $query = "SELECT * FROM comments";
-                                    $select_all_comments_query = mysqli_query($connection, $query);
-                                    //$comment_counts = mysqli_num_rows($select_all_comments_query);
+                                    $username = $_SESSION['username'];
                                     //
-                                    $query = "SELECT * FROM users";
-                                    $select_all_users_query = mysqli_query($connection, $query);
-                                    //$user_counts = mysqli_num_rows($select_all_users_query);
+                                    $query = "SELECT * FROM news WHERE username = '{$username}' ";
+                                    $select_all_news = mysqli_query($connection, $query);
+                                    $news_counts = mysqli_num_rows($select_all_news);
                                     //
-                                    $query = "SELECT * FROM categories";
-                                    $select_all_categories_query = mysqli_query($connection, $query);
-                                    //$category_counts = mysqli_num_rows($select_all_categories_query);
-
+                                    $query = "SELECT * FROM mail WHERE sender = '{$username}'";
+                                    $select_all_mail_query = mysqli_query($connection, $query);
+                                    $mail_counts = mysqli_num_rows($select_all_mail_query);
+                                    //
+                                    $query = "SELECT * FROM receivers WHERE receiver = '{$username}'";
+                                    $select_all_mail_query2 = mysqli_query($connection, $query);
+                                    $mail_counts2 = mysqli_num_rows($select_all_mail_query2);
                                     ?>
 
-                                    <div class='huge'><?php //echo $post_counts ?></div>
-                                    <div>Posts</div>
+                                    <div class='huge'><?php echo $mail_counts2?></div>
+                                    <div>Inbox</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="posts.php">
+                        <a href="mail.php?source=read_mail">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -63,12 +60,34 @@
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class='huge'><?php //echo $comment_counts ?></div>
-                                    <div>Comments</div>
+                                    <div class='huge'><?php echo $mail_counts ?></div>
+                                    <div>Sent Mails</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="comments.php">
+                        <a href="mail.php?source=sent_mail">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-list fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class='huge'><?php echo $news_counts ?></div>
+                                    <div>News</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="news.php">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -86,41 +105,20 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class='huge'><?php //echo $user_counts ?></div>
-                                    <div> Users</div>
+                                    <div> Profile</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="users.php">
+                        <a href="profile.php?source=view_profile">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">View Profile</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-list fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class='huge'><?php //echo $category_counts ?></div>
-                                    <div>Categories</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="categories.php">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

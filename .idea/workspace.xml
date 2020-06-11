@@ -3,13 +3,131 @@
   <component name="ChangeListManager">
     <list default="true" id="0925c8a6-8b30-4fb1-b5f9-06d3aa77b0f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/categories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/bootstrap-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/bootstrap-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/plugins/morris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/sb-admin-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/sb-admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/spinning.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_spinning.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/breno-machado-17850-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/card.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/emma-paillex-769992-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/girl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/header-back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/images/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/add_post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/add_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/admin_footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/admin_header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/admin_navigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/edit_post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/edit_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/update_categories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/view_all_comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/view_all_posts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/includes/view_all_users.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/flot/excanvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/flot/flot-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/flot/jquery.flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/flot/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/flot/jquery.flot.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/flot/jquery.flot.tooltip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/morris/morris-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/morris/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/morris/morris.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/plugins/morris/raphael.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/post_comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/posts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/profile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/admin/users.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/author_posts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/css/blog-home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/css/blog-post.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/images/girl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/images/image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/navigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/includes/widget.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/registration.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inside/include/inside_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/include/inside_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inside/include/profile_allowed_unallowed.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/include/profile_allowed_unallowed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inside/include/mail_compose.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/include/mail_compose.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inside/include/mail_read.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inside/include/mail_sent.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/include/mail_sent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inside/include/profile_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/include/profile_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inside/include/profile_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/include/profile_search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inside/include/profile_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/include/profile_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inside/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inside/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inside/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/inside/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +151,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="378">
+              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -45,15 +163,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="162">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inside/index.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -63,6 +176,7 @@
       <find>navi</find>
       <find>functions.php</find>
       <find>user_firstname</find>
+      <find>mail_compose.php</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,7 +190,6 @@
         <option value="$PROJECT_DIR$/cms/includes/footer.php" />
         <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/navigation.php" />
-        <option value="$PROJECT_DIR$/cms/index.php" />
         <option value="$PROJECT_DIR$/db.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/include/header.php" />
@@ -94,28 +207,30 @@
         <option value="$PROJECT_DIR$/inside/include/edit_profile.php" />
         <option value="$PROJECT_DIR$/inside/include/view_profile.php" />
         <option value="$PROJECT_DIR$/inside/include/search_others.php" />
-        <option value="$PROJECT_DIR$/inside/mail.php" />
-        <option value="$PROJECT_DIR$/home_page.php" />
         <option value="$PROJECT_DIR$/cms/admin/includes/view_all_posts.php" />
         <option value="$PROJECT_DIR$/inside/include/news_delete.php" />
-        <option value="$PROJECT_DIR$/include/logout.php" />
-        <option value="$PROJECT_DIR$/inside/include/mail_compose.php" />
-        <option value="$PROJECT_DIR$/inside/include/mail_sent.php" />
-        <option value="$PROJECT_DIR$/inside/include/mail_read.php" />
         <option value="$PROJECT_DIR$/include/login.php" />
-        <option value="$PROJECT_DIR$/registration.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/inside/include/allowed_unallowed.php" />
         <option value="$PROJECT_DIR$/inside/profile.php" />
         <option value="$PROJECT_DIR$/inside/include/inside_navigation.php" />
-        <option value="$PROJECT_DIR$/inside/index.php" />
         <option value="$PROJECT_DIR$/inside/include/inside_header.php" />
         <option value="$PROJECT_DIR$/inside/news.php" />
         <option value="$PROJECT_DIR$/inside/include/profile_allowed_unallowed.php" />
         <option value="$PROJECT_DIR$/inside/include/profile_view.php" />
-        <option value="$PROJECT_DIR$/inside/include/profile_edit.php" />
         <option value="$PROJECT_DIR$/inside/include/profile_search.php" />
+        <option value="$PROJECT_DIR$/registration.php" />
+        <option value="$PROJECT_DIR$/inside/include/profile_edit.php" />
+        <option value="$PROJECT_DIR$/inside/include/mail_read.php" />
+        <option value="$PROJECT_DIR$/inside/include/mail_compose.php" />
+        <option value="$PROJECT_DIR$/include/logout.php" />
+        <option value="$PROJECT_DIR$/inside/index.php" />
+        <option value="$PROJECT_DIR$/cms/index.php" />
+        <option value="$PROJECT_DIR$/inside/mail.php" />
+        <option value="$PROJECT_DIR$/inside/include/mail_inbox.php" />
+        <option value="$PROJECT_DIR$/inside/include/mail_sent.php" />
         <option value="$PROJECT_DIR$/include/db.php" />
+        <option value="$PROJECT_DIR$/home_page.php" />
       </list>
     </option>
   </component>
@@ -133,6 +248,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DB_Foofle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB_Foofle" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -144,22 +270,6 @@
               <item name="DB_Foofle" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="inside" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DB_Foofle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DB_Foofle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DB_Foofle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DB_Foofle" type="462c0819:PsiDirectoryNode" />
-              <item name="inside" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,21 +353,27 @@
       <workItem from="1591645008467" duration="4290000" />
       <workItem from="1591701877214" duration="2636000" />
       <workItem from="1591716254533" duration="5659000" />
-      <workItem from="1591780167639" duration="1291000" />
+      <workItem from="1591780167639" duration="4989000" />
+      <workItem from="1591795204278" duration="4399000" />
+      <workItem from="1591804569454" duration="7002000" />
+      <workItem from="1591852562868" duration="8563000" />
+      <workItem from="1591867348495" duration="10019000" />
+      <workItem from="1591884747191" duration="7074000" />
+      <workItem from="1591894271591" duration="326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116850000" />
+    <option name="totallyTimeSpent" value="157931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18590604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14832215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -274,25 +390,33 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14630872" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/includes/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/session/session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -387,13 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/admin/includes/add_post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/admin/includes/add_user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -450,54 +567,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inside/include/news_delete.php" />
-    <entry file="file://$PROJECT_DIR$/cms/includes/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inside/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inside/include/mail_sent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inside/include/mail_read.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inside/include/mail_compose.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php" />
     <entry file="file://$PROJECT_DIR$/inside/include/allowed_unallowed.php" />
     <entry file="file://$PROJECT_DIR$/include/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -525,31 +600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inside/include/inside_navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inside/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="37" column="45" lean-forward="true" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inside/include/profile_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inside/include/profile_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -560,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home_page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inside/include/profile_search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -574,32 +621,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inside/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/admin/includes/add_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="79" column="10" lean-forward="true" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inside/include/profile_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="107" column="121" selection-start-line="107" selection-start-column="121" selection-end-line="107" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inside/news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="550">
+          <caret line="48" column="33" selection-start-line="47" selection-start-column="1" selection-end-line="48" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registration.php">
+    <entry file="file://$PROJECT_DIR$/inside/include/mail_read.php" />
+    <entry file="file://$PROJECT_DIR$/inside/include/mail_compose.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        <state relative-caret-position="216">
+          <caret line="43" column="92" selection-start-line="43" selection-start-column="92" selection-end-line="43" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/db.php">
+    <entry file="file://$PROJECT_DIR$/include/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="216">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inside/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inside/include/inside_navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="53" column="59" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/includes/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inside/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inside/include/mail_sent.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inside/include/mail_inbox.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

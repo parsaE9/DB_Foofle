@@ -6,7 +6,7 @@
 if (isset($_GET['source'])) {
     $username = $_SESSION['username'];
     $_SESSION['username'] = null;
-    $sql = "CALL profile_delete('{$username}')";
+    $sql = "CALL profile_delete()";
     $q = $pdo->query($sql);
     header("location: ../home_page.php");
 }

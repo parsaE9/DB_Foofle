@@ -45,6 +45,7 @@ if (isset($_POST['edit_user'])) {
         echo '<script>alert("Operation Failed : \\n- Fill All Fields\\n- Password Length Must Be At Least 6 Character")</script>';
     }
     $password = "";
+    $first_name = "";
 }
 ?>
 
@@ -99,15 +100,15 @@ if (isset($_POST['edit_user'])) {
                             <input type="date" value="<?php echo $birth_date; ?>" class="form-control" name="birth_date">
                         </div>
                         <h3 class="page-header">System Information</h3>
-                        <h4 class="page-header">If You Want To Edit Your Profile, You Must Fill Password</h4>
 
                         <div class="form-group">
                             <label for="post_content">Security Phone Number</label>
                             <input type="text" value="<?php echo $security_phone_number ;?>" class="form-control" name="security_phone_number">
                         </div>
+                        <h4>If You Leave Password Field Empty , Your Password Will Not Change!(it will be same as before)</h4>
                         <div class="form-group">
                             <label for="author">Password</label>
-                            <input type="password" value="<?php echo $password ; ?>" placeholder="YOU MUST FILL PASSWORD" class="form-control" name="password">
+                            <input type="password" value="<?php echo $password ; ?>" placeholder="" class="form-control" name="password">
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary"  name="edit_user" value="Update Profile">
